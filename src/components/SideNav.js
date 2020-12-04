@@ -16,7 +16,7 @@ import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 const SideNav = () => {
     return (
         <div className="sideNav">
-            <SideBarRow selected Icon={HomeIcon} title="Home"/>
+            <SideBarRow  selected Icon={HomeIcon} title="Home"/>
             <SideBarRow Icon={WhatshotIcon} title="Trending"/>
             <SideBarRow Icon={SubscriptionsIcon} title="Subscription"/>
             <div className="sideNav__divider">
