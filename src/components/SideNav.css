@@ -1,3 +1,7 @@
 .sideNav {
     flex: 0.2;
 }
+
+.sideNav__divider {
+    margin: 10px 0;
+}

@@ -19,8 +19,8 @@
     cursor: pointer;
 }
 
-/* .sideBarRow:hover > .sideBarRow__icon{
+ .sideBarRow:hover > .sideBarRow__icon{
     color: red !important;
     cursor: pointer;
-} */
+} 
 

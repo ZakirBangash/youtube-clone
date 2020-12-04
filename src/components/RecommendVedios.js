@@ -1,9 +1,16 @@
 import React from 'react'
+import Videos from './Videos'
 import './RecommendedVedios.css'
 const RecommendVedios = () => {
     return (
         <div className="recommended">
-            <h1>This is recommended Section</h1>
+            <Videos />
+            <Videos />
+            <Videos /> 
+            <Videos />
+            <Videos />            
+
+
         </div>
     )
 }
