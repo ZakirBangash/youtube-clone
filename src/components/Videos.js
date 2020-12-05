@@ -3,6 +3,9 @@ import './Videos.css'
 import { Avatar } from '@material-ui/core';
 
 const Videos = () => {
+    /**
+     * We can make this reusable by passing props, but not doing in this project because it's just for practice
+     */
     return (
         <div className="videos">
             <img className="videos__thumbnail" src="https://i.ytimg.com/an_webp/4dsBkgUCGRY/mqdefault_6s.webp?du=3000&sqp=CPynrf4F&rs=AOn4CLDsJ6POc2P5yQaDR-r3-B_bp4TtBA " alt=""/>

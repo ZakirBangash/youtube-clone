@@ -4,14 +4,14 @@ import SideBar from "./components/SideNav";
 import RecommendVedios from "./components/RecommendVedios";
 import { Routes, Route } from "react-router-dom";
 import SearchPage from "./components/SearchPage";
-import Trending from './components/Trending'
-import Subscription from './components/Subscription'
-import History from './components/History'
-import Library from './components/Library'
-import LikedVideos from './components/LikedVideos'
-import ShowMore from './components/ShowMore'
-import WatchLater from './components/WatchLater'
-import YourVideos from './components/YourVideos'
+import Trending from './components/SideNav/Trending'
+import Subscription from './components/SideNav/Subscription'
+import History from './components/SideNav/History'
+import Library from './components/SideNav/Library'
+import LikedVideos from './components/SideNav/LikedVideos'
+import ShowMore from './components/SideNav/ShowMore'
+import WatchLater from './components/SideNav/WatchLater'
+import YourVideos from './components/SideNav/YourVideos'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <>
               <Header />
               <div className="app__page">
-                <SideBar />
+                <SideBar selected />
                 <RecommendVedios />
               </div>
             </>

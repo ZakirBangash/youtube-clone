@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import SideBarRow from './SideBarRow'
 import './SideNav.css'
 import WhatshotIcon from '@material-ui/icons/Whatshot';
@@ -13,8 +13,16 @@ import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import {Link} from 'react-router-dom';
 
-const SideNav = () => {
+const SideNav = ({selected}) => {
     const [index, setIndex] = useState(1);
+
+    useEffect(() => {
+            if (selected) {
+                setIndex(1)
+            }
+     }, [selected])
+
+
 
     return (
 
