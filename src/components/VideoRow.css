@@ -1,0 +1,28 @@
+.videoRow {
+    display: flex;
+    margin: 25px 0;    
+}
+.videoRow__text > span {
+    font-size: large !important;
+}
+
+.videoRow__text {
+    margin-left: 10px;
+}
+
+.videoRow__avatar__text {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.videoRow__avatar__text > p {
+    color: #606060 !important;
+    margin-left: 15px;
+}
+
+.videoRow__description {
+    margin-top: 20px;
+    color: #606060 !important;
+    font-size: small !important;
+}

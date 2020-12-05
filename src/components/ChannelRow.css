@@ -1,0 +1,26 @@
+.channelRow {
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.channelRow__avatar {
+    height: 120px;
+    width: 120px;
+}
+
+.channelRow__text {
+    margin-left: 100px;
+}
+
+.channelRow__text > span {
+    /* color: #606060 !important; */
+    font-size: x-large !important
+;
+}
+
+.channelRow__text > p {
+    color: #606060 !important;
+    font-size: small !important;
+    padding: 5px 0;
+}

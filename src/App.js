@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import SideBar from "./components/SideNav";
 import RecommendVedios from "./components/RecommendVedios";
 import { Routes, Route } from "react-router-dom";
+import SearchPage from './components/SearchPage'
 
 function App() {
   return (
@@ -26,7 +27,12 @@ function App() {
           element={
             <>
               <Header />
-              <h1>Search Page</h1>
+              <div className="app__page">
+              <SideBar />
+              <SearchPage />
+              </div>
+             
+            
             </>
           }
         />
