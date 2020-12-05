@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import SideBarRow from './SideBarRow'
 import './SideNav.css'
 import WhatshotIcon from '@material-ui/icons/Whatshot';
@@ -11,24 +11,60 @@ import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
 import WatchLaterIcon from '@material-ui/icons/WatchLater';
 import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
-
+import {Link} from 'react-router-dom';
 
 const SideNav = () => {
+    const [index, setIndex] = useState(1);
+
     return (
+
         <div className="sideNav">
-            <SideBarRow  selected Icon={HomeIcon} title="Home"/>
-            <SideBarRow Icon={WhatshotIcon} title="Trending"/>
-            <SideBarRow Icon={SubscriptionsIcon} title="Subscription"/>
+
+            <Link to="/" onClick={()=>setIndex(1)} className="sideNav__link">
+            <SideBarRow 
+             selected={index === 1}
+             
+             Icon={HomeIcon} 
+             title="Home"
+             />
+            </Link>
+
+            <Link to="/trending" onClick={()=> setIndex(2)} className="sideNav__link">
+            <SideBarRow
+            selected={index === 2}
+            
+             Icon={WhatshotIcon}
+             title="Trending"
+              />
+            </Link>
+            <Link to='/subscription' onClick={()=> setIndex(3)} className="sideNav__link">
+            <SideBarRow selected={index === 3}  Icon={SubscriptionsIcon} title="Subscription"/>
+            </Link>
+
             <div className="sideNav__divider">
             <Divider />
             </div>
-            <SideBarRow Icon={VideoLibraryIcon} title="Library"/>
-            <SideBarRow Icon={HistoryIcon} title="History"/>
-            <SideBarRow Icon={OndemandVideoIcon} title="Your Videos"/>
-            <SideBarRow Icon={WatchLaterIcon} title="Watch later"/>
-            <SideBarRow Icon={ThumbUpAltOutlinedIcon} title="Liked videos"/>
-            <SideBarRow Icon={ExpandMoreOutlinedIcon} title="show more"/>
-        
+            <Link to="/library" onClick={()=> setIndex(4)} className="sideNav__link">
+            <SideBarRow selected={index === 4}  Icon={VideoLibraryIcon} title="Library"/>
+            </Link>
+
+            <Link to="/history" onClick={()=> setIndex(5)} className="sideNav__link">
+            <SideBarRow  selected={index === 5}  Icon={HistoryIcon} title="History"/>
+            </Link>
+            
+            <Link to="/yourVideos" onClick={()=> setIndex(6)} className="sideNav__link">
+            <SideBarRow selected={index === 6} Icon={OndemandVideoIcon} title="Your Videos"/>
+            </Link>
+
+            <Link to="/watchLater" onClick={()=> setIndex(7)} className="sideNav__link">
+            <SideBarRow selected={index === 7} Icon={WatchLaterIcon} title="Watch later"/>
+            </Link>
+            <Link to="/likedVideos" onClick={()=> setIndex(8)} className="sideNav__link">
+            <SideBarRow selected={index === 8}  Icon={ThumbUpAltOutlinedIcon} title="Liked videos"/>
+            </Link>
+            <Link to="/showMore" onClick={()=> setIndex(9)} className="sideNav__link">
+            <SideBarRow selected={index === 9} Icon={ExpandMoreOutlinedIcon} title="show more"/>
+            </Link>
         </div>
     )
 }

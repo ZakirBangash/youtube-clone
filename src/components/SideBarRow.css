@@ -3,6 +3,7 @@
     align-items: center;
     flex:0.2;
     padding: 10px 20px;
+    text-decoration: none !important;
 }
 
 .sideBarRow__icon {
@@ -13,11 +14,14 @@
     margin-left: 20px;
     font-size: 12px;
     font-weight: 500;
+    
 }
+
 
 .sideBarRow:hover {
     background-color: lightgray;
     cursor: pointer;
+
 }
 
  .sideBarRow:hover > .sideBarRow__icon{
@@ -25,3 +29,11 @@
     cursor: pointer;
 } 
 
+.sideBarRow.selected {
+    color: red !important;   
+    background-color: lightgray;
+}
+
+.sideBarRow.selected > .sideBarRow__icon {
+    color: red !important;
+}

@@ -6,3 +6,8 @@
 .sideNav__divider {
     margin: 10px 0;
 }
+
+.sideNav__link {
+    text-decoration: none;
+    color: black;
+}
