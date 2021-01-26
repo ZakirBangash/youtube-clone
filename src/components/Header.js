@@ -26,7 +26,9 @@ const [input, setinput] = useState('');
           alt="Youtube"
         />
         </Link>
-       
+       <h1>This good for business</h1>
+       <h2>This is Zakir Bangash a very honest man</h2>
+       <h4>This is for testing</h4>
       </div>
 
       <div className="header__middle">
